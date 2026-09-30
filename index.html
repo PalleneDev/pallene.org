@@ -89,12 +89,14 @@
                 left: -100rem;
                 height: 400vh;
                 width: auto;
+                pointer-events: none;
+                background-image: url("./spiral.png");
             }
         </style>
     </head>
     <body>
         <div id="container">
-            <img id="bg" src="./spiral.png" width="6460" height="6224" />
+            <div id="bg" width="6460" height="6224" role="none"/>
             <img src="plnxblue.png" width="1377" height="260" alt="Pallene Authoring Suite" id="logo" role="heading" />
             <span id="tagline">The last authoring program you'll ever need.</span>
             <hr width="100%" />
