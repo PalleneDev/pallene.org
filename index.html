@@ -13,11 +13,11 @@
         <style>
             html {
                 background-color: #000731;
-                font-family: 'Funnel Sans', sans-serif;
+                font-family: "Funnel Sans", sans-serif;
                 font-optical-sizing: auto;
                 font-style: normal;
                 font-weight: 400;
-                color: #27b8ff;
+                color: #27B8FF;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -75,11 +75,11 @@
 
             hr {
                 border-style: dashed;
-                border-color: #27b8ff;
+                border-color: #27B8FF;
             }
 
-            a > img:hover {
-                filter: brightness(70%);
+            a>img:hover {
+                filter: brightness(70%);d
                 transition: all 0.3s ease-in-out;
             }
 
@@ -89,30 +89,29 @@
                 left: -100rem;
                 height: 400vh;
                 width: auto;
-                pointer-events: none;
-                background-image: url("./spiral.png");
+                z-index: -1;
             }
         </style>
     </head>
     <body>
         <div id="container">
-            <div id="bg" width="6460" height="6224" role="none"> </div>
             <img src="plnxblue.png" width="1377" height="260" alt="Pallene Authoring Suite" id="logo" role="heading" />
             <span id="tagline">The last authoring program you'll ever need.</span>
-            <hr width="100%" />
+            <hr width="100%"/>
             <div id="soon-container">
                 <span id="soon">Currently in the oven.</span>
                 <span>Check back soon &colon;&rpar;</span>
             </div>
-            <hr width="100%" />
+            <hr width="100%">
             <div id="socials">
                 <a href="https://github.com/PalleneDev/Pallene">
-                    <img src="icon_gh.svg" alt="Visit GitHub" width="24" height="24" />
+                    <img src="icon_gh.svg" alt="Visit GitHub" width="24" height="24"/>
                 </a>
                 <a href="https://bsky.app/profile/pallene.org">
-                    <img src="icon_bsky.svg" alt="Visit Bluesky" width="24" height="24" />
+                    <img src="icon_bsky.svg" alt="Visit Bluesky" width="24" height="24"/>
                 </a>
             </div>
         </div>
+        <img id="bg" src="./spiral.png" width="6460" height="6224" draggable="false"/>
     </body>
 </html>
