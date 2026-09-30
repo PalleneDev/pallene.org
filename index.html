@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pallene</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            html {
+                background-color: #000731;
+                font-family: 'Funnel Sans', sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-weight: 400;
+                color: #27b8ff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            body {
+                padding-left: 4rem;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            #logo {
+                height: 6rem;
+                width: auto;
+                margin-bottom: 0.2rem;
+            }
+
+            #tagline {
+                font-style: italic;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            #seller {
+                font-weight: 400;
+            }
+
+            #soon-container {
+                display: inherit;
+                flex-direction: inherit;
+                gap: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            #soon {
+                font-weight: 900;
+                font-size: 2rem;
+            }
+
+            #socials {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            hr {
+                border-style: dashed;
+                border-color: #27b8ff;
+            }
+
+            a > img:hover {
+                filter: brightness(70%);
+                transition: all 0.3s ease-in-out;
+            }
+
+            #bg {
+                position: absolute;
+                top: -100rem;
+                left: -100rem;
+                height: 400vh;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img id="bg" src="./spiral.png" width="6460" height="6224" />
+            <img src="plnxblue.png" width="1377" height="260" alt="Pallene Authoring Suite" id="logo" role="heading" />
+            <span id="tagline">The last authoring program you'll ever need.</span>
+            <hr width="100%" />
+            <div id="soon-container">
+                <span id="soon">Currently in the oven.</span>
+                <span>Check back soon &colon;&rpar;</span>
+            </div>
+            <hr width="100%" />
+            <div id="socials">
+                <a href="https://github.com/PalleneDev/Pallene">
+                    <img src="icon_gh.svg" alt="Visit GitHub" width="24" height="24" />
+                </a>
+                <a href="https://bsky.app/profile/pallene.org">
+                    <img src="icon_bsky.svg" alt="Visit Bluesky" width="24" height="24" />
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
